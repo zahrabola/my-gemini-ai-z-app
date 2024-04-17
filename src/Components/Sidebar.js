@@ -7,7 +7,9 @@ const Sidebar = () => {
   return (
     <div className="sidebar-container">
       <div className="top">
-        <img src={assets.menuicon} alt="menu icon" className="menu-icon" />
+        <img src={assets.menuicon} alt="menu icon"
+         className="menu-icon" 
+         onClick={()=> setIsOpen(prev => !prev)} />
         <div className="newchat">
           <img src={assets.plusicon} alt="plus icon" className="plus-icon" />
           {isopen ? <p>New Chat</p> : null}
